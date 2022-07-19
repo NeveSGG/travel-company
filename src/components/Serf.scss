@@ -1,0 +1,29 @@
+@import '_variables';
+
+.Serf{
+    position: absolute;
+    padding-top: 1550px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    img {
+        width: auto;
+    }
+    @include breakpoint2 ($xxxxs-bp) {
+        padding-top: 1600px;
+    }
+     @include breakpoint2 ($xxxs-bp) {
+        padding-top: 1500px;
+     }
+     @include breakpoint2 ($xxs-bp) {
+        padding-top: 1200px;
+     }
+     @include breakpoint2 ($s-bp) {
+        padding-top: 700px;
+     }
+     @include breakpoint2 ($xl-bp) {
+        padding-top: 40px;
+        justify-content: flex-end;
+     }
+}

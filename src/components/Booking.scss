@@ -1,0 +1,77 @@
+@import "variables";
+
+.Booking {
+    padding: 174px 7px 0 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 30;
+    display: flex;
+    @include breakpoint2 ($xxxxs-bp) {
+        padding: 174px 25px 0 25px;
+    }
+    @include breakpoint2 ($xxxs-bp) {
+        padding: 174px 40px 0 40px;
+    }
+    @include breakpoint2 ($xxs-bp) {
+        padding: 174px 55px 0 55px;
+    }
+    @include breakpoint2 ($m-bp) {
+        padding: 174px 150px 0 150px;
+    }
+    @include breakpoint2 ($l-bp) {
+        padding: 174px 300px 0 300px;
+    }
+    @include breakpoint2 ($xl-bp) {
+        flex-direction: column;
+    }
+}
+
+
+.booking-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include breakpoint2 ($xl-bp) {
+        flex-direction: row;
+    }
+}
+
+.hotel-button, .flight-button, .car-button, .ship-button {
+    width: 120px;
+    height: 45px;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    @include breakpoint2 ($xl-bp) {
+        border-radius: 4px 4px 0px 0px;
+    }
+}
+
+.button--img {
+    padding-left: 10px;
+    width: 30px;
+}
+
+.button--text {
+    color: #1F3347;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.form-wrapper {
+    
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 6px 24px #E4E2EE;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    @include breakpoint2 ($xl-bp) {
+        justify-content: flex-start;
+    }
+}

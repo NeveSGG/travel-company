@@ -1,0 +1,24 @@
+$xl-bp: 1890px;
+$l-bp: 1600px;
+$m-bp: 1300px;
+$s-bp: 1150px;
+$xs-bp: 945px;
+$xxs-bp: 700px;
+$xxxs-bp: 550px;
+$xxxxs-bp: 450px;
+
+$yellow: #FFC814;
+$white: #fcfcfc;
+$grey: #868585;
+
+@mixin breakpoint($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint2($bp) {
+    @media screen and (min-width: $bp) {
+        @content;
+    }
+}

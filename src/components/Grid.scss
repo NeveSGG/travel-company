@@ -1,0 +1,63 @@
+@import '_variables';
+
+.grid {
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+
+    @include breakpoint2 ($xxs-bp) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint2 ($xs-bp) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include breakpoint2 ($m-bp) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include breakpoint2 ($xl-bp) {
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 37px;
+    }
+
+    .form--input {
+        padding: 5px;
+        align-self: flex-end;
+    }
+
+    
+}
+
+.form--input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form--input-name {
+    color: #1F3347;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 7px;
+}
+
+.form--input-input {
+    padding-left: 10px;
+    width: 160px;
+    height: 56px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 24px #E4E2EE;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.form--input-button {
+    width: 160px;
+    height: 56px;
+}

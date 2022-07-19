@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+.background {
+    // height: 900px;
+    // background:no-repeat;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    // background-size: 100% 900px; /* Современные браузеры */
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}

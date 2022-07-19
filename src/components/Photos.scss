@@ -1,0 +1,66 @@
+@import "variables";
+
+.Photos {
+    position: relative;
+    width:100%;
+    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint2($xxxs-bp) {
+        justify-content: flex-start;
+    }
+    
+}
+
+.photo-1 {
+    position: absolute;
+    top:300px;
+    width: 70%;
+    left: 20px;
+    filter: drop-shadow(0px 6px 24px #E4E2EE);
+    border-radius: 14px;
+
+    @include breakpoint2($xxxs-bp) {
+        width: 410px;
+    }
+    @include breakpoint2($xxxs-bp) {
+        justify-content: flex-start;
+        left: 30px;
+    }
+    @include breakpoint2($xxs-bp){
+        left: 50px;
+        top: 0;
+    }
+    @include breakpoint2($m-bp){
+        left: 150px;
+    }
+    @include breakpoint2($l-bp){
+        left: 300px;
+        top: -100px;
+    }
+}
+
+.photo-2 {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 180%;
+    filter: drop-shadow(0px 6px 24px #E4E2EE);
+    border-radius: 14px;
+
+    @include breakpoint2($xxxs-bp) {
+        width: 266px;
+    }
+    @include breakpoint2($xxs-bp){
+        left: 361px;
+        top: 297px;
+    }
+    @include breakpoint2($m-bp){
+        left: 461px;
+    }
+    @include breakpoint2($l-bp){
+        left: 611px;
+        top: 197px;
+    }
+}

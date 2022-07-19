@@ -1,0 +1,29 @@
+@import "variables";
+
+.ContentBackground {
+    text-align: center;
+    width: 100%;
+    
+    margin-top: 380px;
+
+    h1{
+        left: 0;
+        font-weight: 600;
+        font-size: 100px;
+        line-height: 190px;
+        color: rgba(244, 246, 250, 0.8);
+
+        @include breakpoint2 ($xxs-bp) {
+            font-size: 180px;
+        }
+        @include breakpoint2 ($xs-bp) {
+            font-size: 300px;
+        }
+        @include breakpoint2 ($m-bp) {
+            font-size: 350px;
+        }
+        @include breakpoint2 ($xl-bp) {
+            font-size: 430px;
+        }
+    }
+}

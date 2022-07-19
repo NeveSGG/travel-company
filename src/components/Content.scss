@@ -1,0 +1,43 @@
+@import "variables";
+
+.Description {
+    padding-top: 114px;
+    padding: 114px 7px 0 7px;
+    max-width: 563px;
+
+    @include breakpoint2($xxxxs-bp){
+        padding: 114px 20px 0 20px;
+    }
+    @include breakpoint2($xxxs-bp){
+        padding: 114px 30px 0 30px;
+    }
+    @include breakpoint2($xxs-bp){
+        padding: 114px 50px 0 50px;
+    }
+    @include breakpoint2($m-bp){
+        padding: 114px 150px 0 150px;
+    }
+    @include breakpoint2($l-bp){
+        padding: 114px 300px 0 300px;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 76px;
+    }
+
+    p{
+        padding: 17px 0 37px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+}
+
+.description--buttons {
+    display: flex;
+    gap: 20px
+
+}

@@ -1,0 +1,118 @@
+@import "variables";
+
+.font-face-qk {
+    font-family: "QuickKiss", 'Poppins', sans-serif;
+    color: #FFC814;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 15px;
+}
+
+.Content--text{
+    position: absolute;
+    width: calc(100% - 10px);
+    left: 5px;
+    right: 5px;
+    z-index: 3;
+    padding-top: 750px;
+     @include breakpoint2 ($xxxxs-bp) {
+        padding-top: 800px;
+     }
+     @include breakpoint2 ($xxxs-bp) {
+        width: 525px;
+        padding-top: 850px;
+        padding-left: 70px;
+     }
+     @include breakpoint2 ($xxs-bp) {
+        padding-top: 580px;
+        padding-left: 100px;
+     }
+     @include breakpoint2 ($s-bp) {
+        padding-left: 0;
+        left:unset;
+        right: 0;
+        padding-top: 0px;
+        top: 0;
+     }
+     @include breakpoint2 ($m-bp) {
+        right: 10px;
+        top: 0;
+     }
+     @include breakpoint2 ($l-bp) {
+        right: 150px;
+        top: -97px;
+     }
+     @include breakpoint2 ($xl-bp) {
+        right: 450px;
+        top: -97px;
+     }
+}
+.Content--text_title {
+    padding-top: 10px;
+    color: #1F3347;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+.Content--text_main {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9DA1B4;
+    padding-top: 29px;
+}
+
+.Content--text-list{
+    padding-top: 19px;
+    padding-left: 22px;
+}
+
+.Content--text-element {
+    padding-left: 10px;
+    
+}
+
+.Content--text_main-el {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    color: #9DA1B4;
+}
+
+.Content--facts{
+    padding-top: 32px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Content--facts-element {
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 28px;
+        color: #FFC814;
+        padding-bottom: 7px;
+    }
+    
+    p {
+        padding-top: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #9DA1B4;
+    }
+}
+
+.mrgtp50 {
+    margin-top: 50px;
+}

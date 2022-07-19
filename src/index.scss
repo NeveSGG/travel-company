@@ -1,0 +1,104 @@
+@import 'components/_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    :before, :after {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+                box-sizing: content-box;
+    }
+  }
+
+  /* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $yellow transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $grey;
+  border-radius: 20px;
+  border: 3px solid $grey;
+}
+  
+  body {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  ::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  
+  @font-face {
+    font-family: "QuickKiss";
+    src: local("QuickKiss"),
+     url("./fonts/Quick-Kiss.ttf") format("truetype");
+    font-weight: normal;
+    }
+  
+  p{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1{
+    color:#fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .padd {
+    padding: 0 300px;
+  }
+
+  a {
+    text-decoration: none;
+    // color: #fff;
+  }
+  
+  .mainBtn{
+    width: 160px;
+    height: 56px;
+    background-color: #FFC814;
+    color: #1F3347;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .secondBtn{
+    width: 160px;
+    height: 56px;
+    padding: 0;
+    background-color: #fff;
+    color: #181818;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .disable-scroll {
+    overflow-y: hidden;
+  }
